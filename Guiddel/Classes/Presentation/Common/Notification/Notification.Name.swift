@@ -10,7 +10,8 @@ import Foundation
 
 extension Notification.Name {
     static let didReceiveUserData = Notification.Name("didReceiveData")
-    static let didCompleteTask = Notification.Name("didCompleteTask")
+    static let didChangedMuseumRequest = Notification.Name("didChangedMuseumRequest")
+    static let didChangedMuseumRequestName = Notification.Name("didChangedMuseumRequestName")
     static let completedLengthyDownload = Notification.Name("completedLengthyDownload")
 }
 

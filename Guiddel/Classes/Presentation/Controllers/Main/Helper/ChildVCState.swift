@@ -8,7 +8,8 @@
 
 import Foundation
 
-enum Child {
+enum ChildVCState {
     case name
     case creation
+    case news
 }

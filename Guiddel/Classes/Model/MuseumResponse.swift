@@ -15,7 +15,7 @@ struct Main: Codable {
 
 // MARK: - Datum
 struct Datum: Codable {
-    let data: DataClass?
+    let data: DataClass
 }
 
 // MARK: - DataClass
@@ -25,10 +25,10 @@ struct DataClass: Codable {
 
 // MARK: - General
 struct General: Codable {
-    let workingSchedule: [String: WorkingSchedule]
+    let workingSchedule: [String: WorkingSchedule]?
     let organization: Organization
     let image: Image
-    let gallery: [Image]
+    let gallery: [Image]?
     let contacts: Contacts
     let category: Category
     let address: GeneralAddress
@@ -66,8 +66,8 @@ struct Category: Codable {
 // MARK: - Contacts
 struct Contacts: Codable {
     let phones: [Phone]
-    let email: String
-    let website: String
+    let email: String?
+    let website: String?
 }
 
 // MARK: - Phone

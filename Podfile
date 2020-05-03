@@ -9,6 +9,8 @@ target 'Guiddel' do
   	pod 'Firebase/Storage'
   	pod 'FirebaseFirestoreSwift'
 	pod 'FloatingPanel'
+	pod 'Alamofire'
+	pod 'JTAppleCalendar', '~> 7.1.7'
   # Pods for Guiddel
 
 end

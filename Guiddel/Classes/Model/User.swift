@@ -21,7 +21,8 @@ struct User: Codable {
         displayName = authData.displayName
         photoURL = authData.photoURL?.absoluteString
     }
-    init (uid: String, email: String, displayName: String?, photoURL: String?){
+    
+    init (email: String, displayName: String?, photoURL: String?){
         self.email = email
         self.displayName = displayName
         self.photoURL = photoURL

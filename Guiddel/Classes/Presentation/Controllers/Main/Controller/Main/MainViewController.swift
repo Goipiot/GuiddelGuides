@@ -12,12 +12,12 @@ import FloatingPanel
 
 class MainViewController: UIViewController {
     
-    // MARK: Private properties
+    // MARK: - Private properties
     private var handle: AuthStateDidChangeListenerHandle?
     private var fpc: FloatingPanelController!
     private var bottomMenuVC: BottomMenuViewController!
     
-    // MARK: UIViewController
+    // MARK: - UIViewController
     override func viewWillAppear(_ animated: Bool) {
         handle = Auth.auth().addStateDidChangeListener { auth, user in
             guard let user = user else { return }
@@ -31,14 +31,32 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupBottomMenu()
+        setup()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         Auth.auth().removeStateDidChangeListener(handle!)
     }
+
+    // MARK: - Public Methods
+    @objc public func museumRequestChanged(_ notification: Notification) {
+        guard let name = notification.object as? String else {
+            return
+        }
+        
+    }
     
+    // MARK: - Private Methods
+    private func setup() {
+        setupBottomMenu()
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(museumRequestChanged(_:)),
+                                               name: .didChangedMuseumRequestName,
+                                               object: nil)
+        
+    }
+
 }
 
 // MARK: - FloatingPanelControllerDelegate
@@ -101,6 +119,11 @@ extension MainViewController: FloatingPanelControllerDelegate {
             bottomMenuVC.searchBar.resignFirstResponder()
         }
     }
+    func floatingPanelDidChangePosition(_ vc: FloatingPanelController) {
+        if vc.position == .half {
+            bottomMenuVC.changeState(to: .news)
+        } 
+    }
 
 //    func floatingPanelDidEndDragging(_ vc: FloatingPanelController, withVelocity velocity: CGPoint, targetPosition: FloatingPanelPosition) {
 //        if targetPosition != .full {
@@ -128,6 +151,7 @@ extension MainViewController: UISearchBarDelegate {
         searchBar.showsCancelButton  = false
 //        bottomMenuVC.searchTableVC.hideHeader()
         fpc.move(to: .half, animated: true)
+//        bottomMenuVC.changeState(to: .news)
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
@@ -135,6 +159,7 @@ extension MainViewController: UISearchBarDelegate {
 //        bottomMenuVC.searchTableVC.showHeader()
 //        bottomMenuVC.searchTableVC.tableView.alpha = 1.0
         fpc.move(to: .full, animated: true)
+        bottomMenuVC.changeState(to: .name)
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
