@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E4b-Wq-sFT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Initial-->
+        <scene sceneID="9UY-4h-pBK">
+            <objects>
+                <viewController storyboardIdentifier="Initial" title="Initial" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aHX-wk-wBj" customClass="LoginViewController" customModule="GuiddelGuides" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gu1-pH-j8b"/>
+                        <viewControllerLayoutGuide type="bottom" id="efb-o0-QcR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="15A-0Q-tLP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liza-rusalskaya-D-1" translatesAutoresizingMaskIntoConstraints="NO" id="xP7-En-ljl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 87" translatesAutoresizingMaskIntoConstraints="NO" id="Vvg-WV-W4h">
+                                <rect key="frame" x="15" y="512" width="303" height="118"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="303" id="A8r-d7-UHx"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Vwo-iw-X4v">
+                                <rect key="frame" x="15" y="620" width="384" height="172"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jDa-07-Ezx" customClass="TransparentTextField" customModule="GuiddelGuides" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="nKx-qn-GoB"/>
+                                        </constraints>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="aHX-wk-wBj" id="ch7-TP-y3n"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i00-NW-Ao8" customClass="TransparentTextField" customModule="GuiddelGuides" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="67" width="384" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="7U9-3r-ifJ"/>
+                                        </constraints>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="aHX-wk-wBj" id="1O6-Du-Krh"/>
+                                        </connections>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="rZ6-m3-HvR">
+                                        <rect key="frame" x="0.0" y="134" width="384" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bvy-Vy-JNY">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="NMB-Nm-scr"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Регистрация">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="17" name="Oswald-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="signUpDidTouch:" destination="aHX-wk-wBj" eventType="touchUpInside" id="eob-5V-LMM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U3u-IP-SHq" customClass="RoundCornersButton" customModule="GuiddelGuides" customModuleProvider="target">
+                                                <rect key="frame" x="184" y="0.0" width="200" height="38"/>
+                                                <color key="backgroundColor" red="0.21568627450980393" green="0.24313725490196078" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="1zk-Ps-8sg"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Войти">
+                                                            <attributes>
+                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                <font key="NSFont" size="17" name="Oswald-Regular"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="loginDidTouch:" destination="aHX-wk-wBj" eventType="touchUpInside" id="XBP-XM-0MG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vwo-iw-X4v" firstAttribute="leading" secondItem="PMx-fR-n6J" secondAttribute="leading" constant="15" id="3ox-Y8-9ZK"/>
+                            <constraint firstItem="Vvg-WV-W4h" firstAttribute="leading" secondItem="Vwo-iw-X4v" secondAttribute="leading" id="9OB-Gr-QVu"/>
+                            <constraint firstItem="PMx-fR-n6J" firstAttribute="bottom" secondItem="Vwo-iw-X4v" secondAttribute="bottom" constant="70" id="Mzw-8E-22f"/>
+                            <constraint firstItem="Vwo-iw-X4v" firstAttribute="top" secondItem="Vvg-WV-W4h" secondAttribute="bottom" constant="-10" id="UyM-EK-srZ"/>
+                            <constraint firstItem="xP7-En-ljl" firstAttribute="leading" secondItem="15A-0Q-tLP" secondAttribute="leading" id="eOU-bh-G0b"/>
+                            <constraint firstItem="Vwo-iw-X4v" firstAttribute="centerX" secondItem="PMx-fR-n6J" secondAttribute="centerX" id="jgm-KY-2pq"/>
+                            <constraint firstAttribute="top" secondItem="xP7-En-ljl" secondAttribute="top" id="oQc-ZG-MWQ"/>
+                            <constraint firstItem="xP7-En-ljl" firstAttribute="bottom" secondItem="15A-0Q-tLP" secondAttribute="bottom" id="u6E-N5-yeq"/>
+                            <constraint firstAttribute="trailing" secondItem="xP7-En-ljl" secondAttribute="trailing" id="wgi-Zh-tFF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PMx-fR-n6J"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8mF-Lz-a5x"/>
+                    <connections>
+                        <outlet property="textFieldLoginEmail" destination="jDa-07-Ezx" id="dK8-4X-z31"/>
+                        <outlet property="textFieldLoginPassword" destination="i00-NW-Ao8" id="SBT-7G-Qyo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gdi-RQ-FbD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302.89855072463769" y="516.29464285714289"/>
+        </scene>
+        <!--WelcomeNavigation-->
+        <scene sceneID="ztB-Sm-jua">
+            <objects>
+                <navigationController storyboardIdentifier="WelcomeNavigation" title="WelcomeNavigation" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="E4b-Wq-sFT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PCv-XP-kNM">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aHX-wk-wBj" kind="relationship" relationship="rootViewController" id="lUx-Rg-fJ3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMG-bB-lMN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-636" y="516.79160419790105"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Group 87" width="303" height="118"/>
+        <image name="liza-rusalskaya-D-1" width="2491" height="1660.5"/>
+    </resources>
+</document>

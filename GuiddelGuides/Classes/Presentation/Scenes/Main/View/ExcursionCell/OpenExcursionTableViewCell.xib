@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="excursionCell" rowHeight="219" id="Qsj-fS-x5A" customClass="OpenExcursionTableViewCell" customModule="GuiddelGuides" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qsj-fS-x5A" id="t1l-ti-TJt">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="225"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="gog-Iy-JQt">
+                        <rect key="frame" x="0.0" y="0.0" width="338" height="215"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8X-jO-Pg6">
+                                <rect key="frame" x="0.0" y="0.0" width="338" height="170"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="british-museum-london-exterior" translatesAutoresizingMaskIntoConstraints="NO" id="OzX-EJ-w87" customClass="RoundCornersImage" customModule="GuiddelGuides" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="338" height="170"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHA-1H-Utv" customClass="PartlyRoundCornersView" customModule="GuiddelGuides" customModuleProvider="target">
+                                        <rect key="frame" x="270" y="0.0" width="68" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeu-Oz-BrS">
+                                                <rect key="frame" x="12.5" y="7" width="43" height="20"/>
+                                                <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1215686277" green="0.23529411850000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="68" id="3s8-ED-mz8"/>
+                                            <constraint firstAttribute="height" constant="34" id="Giz-Gn-eM8"/>
+                                            <constraint firstItem="zeu-Oz-BrS" firstAttribute="centerY" secondItem="QHA-1H-Utv" secondAttribute="centerY" id="SAM-07-Upo"/>
+                                            <constraint firstItem="zeu-Oz-BrS" firstAttribute="centerX" secondItem="QHA-1H-Utv" secondAttribute="centerX" id="goG-OB-iiV"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 мест" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTD-q0-3IF">
+                                        <rect key="frame" x="15" y="7" width="578" height="20"/>
+                                        <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="OzX-EJ-w87" secondAttribute="bottom" id="8cB-cr-PJq"/>
+                                    <constraint firstItem="OzX-EJ-w87" firstAttribute="leading" secondItem="w8X-jO-Pg6" secondAttribute="leading" id="Cgg-Ao-bm9"/>
+                                    <constraint firstItem="pTD-q0-3IF" firstAttribute="top" secondItem="w8X-jO-Pg6" secondAttribute="top" constant="7" id="ESP-JQ-sTT"/>
+                                    <constraint firstItem="pTD-q0-3IF" firstAttribute="leading" secondItem="w8X-jO-Pg6" secondAttribute="leading" constant="15" id="F4v-sh-qsX"/>
+                                    <constraint firstItem="QHA-1H-Utv" firstAttribute="top" secondItem="w8X-jO-Pg6" secondAttribute="top" id="NH6-U3-PSw"/>
+                                    <constraint firstItem="OzX-EJ-w87" firstAttribute="centerX" secondItem="w8X-jO-Pg6" secondAttribute="centerX" id="Qi3-5E-s8z"/>
+                                    <constraint firstItem="pTD-q0-3IF" firstAttribute="centerX" secondItem="QHA-1H-Utv" secondAttribute="centerX" id="TxF-xL-Rcc"/>
+                                    <constraint firstItem="OzX-EJ-w87" firstAttribute="top" secondItem="w8X-jO-Pg6" secondAttribute="top" id="fso-yD-L0t"/>
+                                    <constraint firstAttribute="trailing" secondItem="QHA-1H-Utv" secondAttribute="trailing" id="iWc-zl-bRG"/>
+                                    <constraint firstAttribute="height" constant="170" id="jbv-WV-9zd"/>
+                                    <constraint firstAttribute="trailing" secondItem="OzX-EJ-w87" secondAttribute="trailing" id="lUZ-iq-H9a"/>
+                                    <constraint firstItem="OzX-EJ-w87" firstAttribute="centerY" secondItem="w8X-jO-Pg6" secondAttribute="centerY" id="vvP-9Z-acD"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="4bp-Vt-ciI">
+                                <rect key="frame" x="0.0" y="172" width="338" height="43"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IKC-bf-0oG">
+                                        <rect key="frame" x="0.0" y="0.0" width="338" height="29"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="po2-Pi-MrL">
+                                                <rect key="frame" x="0.0" y="2.5" width="282" height="23.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Музей имени А.C. Пушкина">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="20" name="Oswald-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOO-Hc-N4l">
+                                                <rect key="frame" x="302" y="6" width="36" height="16.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="150 р">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.062585361300000003" green="0.066455274819999993" blue="0.078909628090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="14" name="Oswald-Light"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="po2-Pi-MrL" firstAttribute="centerY" secondItem="IKC-bf-0oG" secondAttribute="centerY" id="BIA-ff-m5d"/>
+                                            <constraint firstItem="hOO-Hc-N4l" firstAttribute="centerY" secondItem="po2-Pi-MrL" secondAttribute="centerY" id="FIS-da-Tpo"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UC5-NA-472">
+                                        <rect key="frame" x="0.0" y="24" width="338" height="19"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Экскурсия по египетскому залу">
+                                                <attributes>
+                                                    <color key="NSColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="Oswald-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="4bp-Vt-ciI" firstAttribute="centerX" secondItem="gog-Iy-JQt" secondAttribute="centerX" id="OZu-3Z-5bW"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gog-Iy-JQt" secondAttribute="trailing" id="2Z6-EG-g65"/>
+                    <constraint firstItem="gog-Iy-JQt" firstAttribute="top" secondItem="t1l-ti-TJt" secondAttribute="top" id="fVQ-Yr-Jhw"/>
+                    <constraint firstAttribute="bottom" secondItem="gog-Iy-JQt" secondAttribute="bottom" constant="10" id="h4F-so-elj"/>
+                    <constraint firstItem="gog-Iy-JQt" firstAttribute="leading" secondItem="t1l-ti-TJt" secondAttribute="leading" id="ylP-JE-CC7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="2ho-Qv-LFk"/>
+            <connections>
+                <outlet property="excursionDateLabel" destination="zeu-Oz-BrS" id="4vG-F1-yjn"/>
+                <outlet property="excursionImageView" destination="OzX-EJ-w87" id="Qzu-TI-eEm"/>
+                <outlet property="excursionLabel" destination="UC5-NA-472" id="vyb-Vi-aez"/>
+                <outlet property="excursionPriceLabel" destination="hOO-Hc-N4l" id="SrO-h1-OCY"/>
+                <outlet property="excursionSizeLabel" destination="pTD-q0-3IF" id="r1H-Hh-At7"/>
+                <outlet property="museumNameLabel" destination="po2-Pi-MrL" id="092-ci-7YR"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="77.34375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="british-museum-london-exterior" width="1024" height="683"/>
+    </resources>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="9c3-UE-TuR" customClass="ExcursionSizeTableViewCell" customModule="GuiddelGuides" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9c3-UE-TuR" id="Ibe-X5-nIy">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQm-e5-Qr3">
+                        <rect key="frame" x="20" y="12" width="374" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcG-iK-rNk">
+                                <rect key="frame" x="0.0" y="0.0" width="187" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Размер группы">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Oswald-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPV-ui-MYy">
+                                <rect key="frame" x="187" y="0.0" width="187" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Oswald-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kQm-e5-Qr3" firstAttribute="centerY" secondItem="Ibe-X5-nIy" secondAttribute="centerY" id="Amt-LM-dpV"/>
+                    <constraint firstItem="kQm-e5-Qr3" firstAttribute="centerX" secondItem="Ibe-X5-nIy" secondAttribute="centerX" id="j0Z-cE-bHY"/>
+                    <constraint firstItem="kQm-e5-Qr3" firstAttribute="leading" secondItem="Ibe-X5-nIy" secondAttribute="leading" constant="20" id="yxx-w4-0Wv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="typeLabel" destination="ZcG-iK-rNk" id="AMp-dm-wQO"/>
+                <outlet property="valueLabel" destination="WPV-ui-MYy" id="vfH-5s-FIa"/>
+            </connections>
+            <point key="canvasLocation" x="184" y="65"/>
+        </tableViewCell>
+    </objects>
+</document>

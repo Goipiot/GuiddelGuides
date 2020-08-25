@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="DtM-k9-J4Y" customClass="ExcursionMuseumNameTableViewCell" customModule="GuiddelGuides" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DtM-k9-J4Y" id="fEZ-vM-LHw">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y18-f4-XGy">
+                        <rect key="frame" x="20" y="12" width="374" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VG0-wv-fNk">
+                                <rect key="frame" x="0.0" y="0.0" width="187" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Музей">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Oswald-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pd-Wl-V5M">
+                                <rect key="frame" x="187" y="0.0" width="187" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="N/A">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Oswald-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y18-f4-XGy" firstAttribute="leading" secondItem="fEZ-vM-LHw" secondAttribute="leading" constant="20" id="O7w-G3-uvX"/>
+                    <constraint firstItem="y18-f4-XGy" firstAttribute="centerY" secondItem="fEZ-vM-LHw" secondAttribute="centerY" id="u4z-A5-7g0"/>
+                    <constraint firstItem="y18-f4-XGy" firstAttribute="centerX" secondItem="fEZ-vM-LHw" secondAttribute="centerX" id="vZq-tm-TOA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="typeLabel" destination="VG0-wv-fNk" id="xln-Af-UcQ"/>
+                <outlet property="valueLabel" destination="8pd-Wl-V5M" id="eUk-qT-TyI"/>
+            </connections>
+            <point key="canvasLocation" x="184" y="65"/>
+        </tableViewCell>
+    </objects>
+</document>

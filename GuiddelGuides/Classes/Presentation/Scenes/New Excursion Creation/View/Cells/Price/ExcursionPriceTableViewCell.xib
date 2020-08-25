@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="mWP-QJ-S5X" customClass="ExcursionPriceTableViewCell" customModule="GuiddelGuides" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mWP-QJ-S5X" id="oFm-kB-diu">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UuY-D8-D1X">
+                        <rect key="frame" x="20" y="12" width="374" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sV-SA-Xuu">
+                                <rect key="frame" x="0.0" y="0.0" width="187" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Стоимость">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Oswald-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeD-db-zoU">
+                                <rect key="frame" x="187" y="0.0" width="187" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="N/A">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Oswald-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UuY-D8-D1X" firstAttribute="leading" secondItem="oFm-kB-diu" secondAttribute="leading" constant="20" id="2QB-za-qKu"/>
+                    <constraint firstItem="UuY-D8-D1X" firstAttribute="centerX" secondItem="oFm-kB-diu" secondAttribute="centerX" id="NYv-9R-eu3"/>
+                    <constraint firstItem="UuY-D8-D1X" firstAttribute="centerY" secondItem="oFm-kB-diu" secondAttribute="centerY" id="Ql5-5a-6Sm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="typeLabel" destination="9sV-SA-Xuu" id="bLq-30-pzR"/>
+                <outlet property="valueLabel" destination="PeD-db-zoU" id="JFo-CO-nHh"/>
+            </connections>
+            <point key="canvasLocation" x="184" y="65"/>
+        </tableViewCell>
+    </objects>
+</document>
