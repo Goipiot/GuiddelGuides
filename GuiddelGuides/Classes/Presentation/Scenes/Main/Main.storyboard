@@ -306,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31C-MN-B0E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4106" y="466"/>
+            <point key="canvasLocation" x="2854" y="-502"/>
         </scene>
         <!--Ваши экскурсии-->
         <scene sceneID="CtW-Mu-og2">
@@ -560,7 +560,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="8Od-u0-xYJ" kind="show" id="LZf-Ye-BDb"/>
+                                            <segue destination="SUz-m0-RNR" kind="show" id="pss-5S-nyY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -687,6 +687,220 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EEc-it-RQR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1548" y="1145"/>
+        </scene>
+        <!--User Profile View Controller-->
+        <scene sceneID="iDw-ZC-QIi">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="SUz-m0-RNR" customClass="UserProfileViewController" customModule="GuiddelGuides" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jej-Je-owY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xci-TD-zfB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vqs-Vq-yxA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chc-ta-5Sn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FLh-IX-v6G">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o1m-Sw-qz5" customClass="UserPhotoImageView" customModule="GuiddelGuides" customModuleProvider="target">
+                                                <rect key="frame" x="132" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="2Hp-Eb-iFb"/>
+                                                    <constraint firstAttribute="width" constant="150" id="RBk-Wr-H9j"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="svW-uq-jXl" customClass="CircleButton" customModule="GuiddelGuides" customModuleProvider="target">
+                                                <rect key="frame" x="132" y="0.0" width="150" height="150"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Сменить фото">
+                                                            <attributes>
+                                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <font key="NSFont" size="14" name="Oswald-Regular"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="selectImageTapped:" destination="SUz-m0-RNR" eventType="touchUpInside" id="DD4-Bl-70T"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pVF-bt-Aam">
+                                                <rect key="frame" x="15" y="200" width="384" height="185"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Sb-Ym-Qcw" userLabel="NameView" customClass="TextfieldView" customModule="GuiddelGuides" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="65"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JwN-mb-ClB">
+                                                                <rect key="frame" x="15" y="13" width="354" height="39.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aV-Ek-EP8">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="14"/>
+                                                                        <attributedString key="attributedText">
+                                                                            <fragment content="Имя">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <font key="NSFont" size="12" name="Oswald-Regular"/>
+                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="em4-5W-Rgi">
+                                                                        <rect key="frame" x="0.0" y="24" width="354" height="15.5"/>
+                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="12"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                <integer key="value" value="40"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <outlet property="delegate" destination="SUz-m0-RNR" id="AAe-Ru-Rhs"/>
+                                                                        </connections>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="JwN-mb-ClB" firstAttribute="leading" secondItem="4Sb-Ym-Qcw" secondAttribute="leading" constant="15" id="BDv-SQ-Hzh"/>
+                                                            <constraint firstItem="JwN-mb-ClB" firstAttribute="centerY" secondItem="4Sb-Ym-Qcw" secondAttribute="centerY" id="Euu-xf-cuw"/>
+                                                            <constraint firstAttribute="height" constant="65" id="Ig2-Jd-44Q"/>
+                                                            <constraint firstItem="JwN-mb-ClB" firstAttribute="centerX" secondItem="4Sb-Ym-Qcw" secondAttribute="centerX" id="atD-vK-fpk"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="626" translatesAutoresizingMaskIntoConstraints="NO" id="qfX-a6-N4c">
+                                                        <rect key="frame" x="0.0" y="73" width="115" height="32"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rh3-hg-gVw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="115" height="32"/>
+                                                                <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="17"/>
+                                                                <color key="tintColor" red="0.37254901959999998" green="0.56862745100000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <inset key="imageEdgeInsets" minX="-19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="Верификация ">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="deleteUserButtonPressed:" destination="SUz-m0-RNR" eventType="touchUpInside" id="jLW-Z5-GJB"/>
+                                                                    <action selector="logoutUserButtonPressed:" destination="SUz-m0-RNR" eventType="touchUpInside" id="NRz-Co-5aC"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="626" translatesAutoresizingMaskIntoConstraints="NO" id="3IX-Uj-xko">
+                                                        <rect key="frame" x="0.0" y="113" width="150" height="32"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j4D-Nw-ruC">
+                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="32"/>
+                                                                <color key="tintColor" red="0.37254901959999998" green="0.56862745100000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <inset key="imageEdgeInsets" minX="-19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Выйти из аккаунта">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.21568627450980393" green="0.24313725490196078" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="17" name="Oswald-Regular"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="deleteUserButtonPressed:" destination="SUz-m0-RNR" eventType="touchUpInside" id="zFC-Fb-WsQ"/>
+                                                                    <action selector="logoutUserButtonPressed:" destination="SUz-m0-RNR" eventType="touchUpInside" id="EHw-Ie-Rf9"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="626" translatesAutoresizingMaskIntoConstraints="NO" id="eU5-m5-9ls">
+                                                        <rect key="frame" x="0.0" y="153" width="133" height="32"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zOJ-aD-Jkd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="133" height="32"/>
+                                                                <color key="tintColor" red="0.37254901959999998" green="0.56862745100000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <inset key="imageEdgeInsets" minX="-19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="Удалить аккаунт">
+                                                                            <attributes>
+                                                                                <color key="NSColor" red="0.99607843139999996" green="0.2274509804" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <font key="NSFont" size="17" name="Oswald-Regular"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="deleteUserButtonPressed:" destination="SUz-m0-RNR" eventType="touchUpInside" id="Dbd-q2-hRi"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="4Sb-Ym-Qcw" firstAttribute="leading" secondItem="pVF-bt-Aam" secondAttribute="leading" id="E8k-A3-sSD"/>
+                                                    <constraint firstItem="4Sb-Ym-Qcw" firstAttribute="centerX" secondItem="pVF-bt-Aam" secondAttribute="centerX" id="zxb-iQ-kEl"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="svW-uq-jXl" firstAttribute="centerX" secondItem="o1m-Sw-qz5" secondAttribute="centerX" id="03B-ED-VEu"/>
+                                            <constraint firstItem="pVF-bt-Aam" firstAttribute="centerX" secondItem="FLh-IX-v6G" secondAttribute="centerX" id="9xY-65-Pte"/>
+                                            <constraint firstItem="svW-uq-jXl" firstAttribute="centerY" secondItem="o1m-Sw-qz5" secondAttribute="centerY" id="Gbj-O9-iRP"/>
+                                            <constraint firstItem="pVF-bt-Aam" firstAttribute="top" secondItem="o1m-Sw-qz5" secondAttribute="bottom" constant="50" id="H8Y-Nx-M55"/>
+                                            <constraint firstItem="svW-uq-jXl" firstAttribute="top" secondItem="o1m-Sw-qz5" secondAttribute="top" id="ICV-0z-9HW"/>
+                                            <constraint firstItem="pVF-bt-Aam" firstAttribute="leading" secondItem="FLh-IX-v6G" secondAttribute="leading" constant="15" id="Ldx-5F-Svp"/>
+                                            <constraint firstItem="svW-uq-jXl" firstAttribute="leading" secondItem="o1m-Sw-qz5" secondAttribute="leading" id="Seo-AY-K43"/>
+                                            <constraint firstItem="o1m-Sw-qz5" firstAttribute="centerX" secondItem="FLh-IX-v6G" secondAttribute="centerX" id="Tr5-YE-phg"/>
+                                            <constraint firstItem="o1m-Sw-qz5" firstAttribute="top" secondItem="FLh-IX-v6G" secondAttribute="top" id="c4e-8Q-Tcc"/>
+                                            <constraint firstAttribute="trailing" secondItem="pVF-bt-Aam" secondAttribute="trailing" constant="15" id="va2-jw-xdh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FLh-IX-v6G" secondAttribute="trailing" id="7Mn-of-5ac"/>
+                                    <constraint firstItem="FLh-IX-v6G" firstAttribute="leading" secondItem="chc-ta-5Sn" secondAttribute="leading" id="CMh-c8-LQI"/>
+                                    <constraint firstAttribute="bottom" secondItem="FLh-IX-v6G" secondAttribute="bottom" id="OCv-3k-do7"/>
+                                    <constraint firstItem="FLh-IX-v6G" firstAttribute="centerX" secondItem="chc-ta-5Sn" secondAttribute="centerX" id="hHc-UQ-U6X"/>
+                                    <constraint firstItem="FLh-IX-v6G" firstAttribute="top" secondItem="chc-ta-5Sn" secondAttribute="top" id="mfq-IG-tti"/>
+                                    <constraint firstItem="FLh-IX-v6G" firstAttribute="centerY" secondItem="chc-ta-5Sn" secondAttribute="centerY" id="vMb-IQ-elo"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="zB5-fh-q07"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="TzO-11-cB9"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="chc-ta-5Sn" firstAttribute="top" secondItem="jej-Je-owY" secondAttribute="bottom" id="RbR-FJ-0Yo"/>
+                            <constraint firstItem="Xci-TD-zfB" firstAttribute="top" secondItem="chc-ta-5Sn" secondAttribute="bottom" id="dn9-iu-Kmi"/>
+                            <constraint firstItem="chc-ta-5Sn" firstAttribute="leading" secondItem="vqs-Vq-yxA" secondAttribute="leading" id="pKy-Od-rZC"/>
+                            <constraint firstAttribute="trailing" secondItem="chc-ta-5Sn" secondAttribute="trailing" id="ri1-uE-JGA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yQb-qI-zdw">
+                        <barButtonItem key="rightBarButtonItem" title="Сохранить" id="ac8-Ci-dME">
+                            <connections>
+                                <action selector="updateButtonPressed:" destination="SUz-m0-RNR" id="JSa-QS-cp1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="changeProfileButton" destination="svW-uq-jXl" id="F6P-fN-Ujx"/>
+                        <outlet property="nameTextField" destination="em4-5W-Rgi" id="JZi-dV-oK9"/>
+                        <outlet property="profileImage" destination="o1m-Sw-qz5" id="hQn-La-qjq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wa6-cA-fwJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4033" y="467"/>
         </scene>
     </scenes>
     <resources>

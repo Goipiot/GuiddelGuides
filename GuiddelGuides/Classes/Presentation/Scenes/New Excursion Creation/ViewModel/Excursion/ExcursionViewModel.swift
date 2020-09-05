@@ -17,7 +17,7 @@ class ExcursionViewModel: NSObject {
         super.init()
         
         self.excursion = excursion
-        let museumNameItem = ExcursionViewModelMuseumNameItem(museumName: excursion.museum.name)
+        let museumNameItem = ExcursionViewModelMuseumNameItem(museumName: excursion.museum.name!)
         items.append(museumNameItem)
         
         let excursionNameItem = ExcursionViewModelExcursionNameItem(excursionName: excursion.title)

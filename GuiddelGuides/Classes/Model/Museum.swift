@@ -9,9 +9,11 @@
 import Foundation
 
 struct Museum: Codable {
-    var name: String = ""
-    var photoURL: String = ""
-    var coordinates: [Double] = []
+    var mid: String? = "N/A"
+    var name: String? = "N/A"
+    var photoURL: String? = "N/A"
+    var coordinates: [Double]? = []
     var workingSchedule: [String: WorkingSchedule]? = [:]
-    var lastUpdate: String? = ""
+    var lastUpdate: String? = "N/A"
+    var secretCode: String? = "N/A"
 }

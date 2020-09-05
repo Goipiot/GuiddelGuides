@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>160490654765-ks0mjb4j1odcruvk0kj2htba6iige3c3.apps.googleusercontent.com</string>
+	<string>160490654765-8h1e5n6rjju1id397paqick1l4h04228.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.160490654765-ks0mjb4j1odcruvk0kj2htba6iige3c3</string>
+	<string>com.googleusercontent.apps.160490654765-8h1e5n6rjju1id397paqick1l4h04228</string>
 	<key>API_KEY</key>
 	<string>AIzaSyClEcLyDim0miEjWljq9HWyDsWn4M3VMzs</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.guiddel.guiddelguides</string>
+	<string>com.guiddel.guiddelguidesapp</string>
 	<key>PROJECT_ID</key>
 	<string>guiddel-1f815</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:160490654765:ios:5d7cc2ba4554d8d0f0fca4</string>
+	<string>1:160490654765:ios:e8b61432c395b5fbf0fca4</string>
 	<key>DATABASE_URL</key>
 	<string>https://guiddel-1f815.firebaseio.com</string>
 </dict>

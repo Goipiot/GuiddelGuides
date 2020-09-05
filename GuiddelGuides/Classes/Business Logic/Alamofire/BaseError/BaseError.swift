@@ -13,4 +13,5 @@ enum BaseError: String, Error {
     case parseError = "Invalid request"
     case networkError = "Network error"
     case invalidToken = "Auth failed"
+    case invalidSecretKey = "Данный секретный код не существует"
 }

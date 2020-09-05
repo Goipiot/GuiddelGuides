@@ -20,7 +20,7 @@ struct OpenExcursionViewModel {
     init(excursion: Excursion) {
         self.excursion = excursion
         excursionName = excursion.title
-        museumName = excursion.museum.name
+        museumName = excursion.museum.name!
 //        let size = excursion.groupLimit - excursion.participants.count
         self.size = "\(excursion.participants.count)/\(excursion.groupLimit) участников"
         price = "\(excursion.price)руб"

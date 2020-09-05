@@ -142,6 +142,18 @@ class UserFirestoreManager {
         }
     }
     
+    func verifyGuide(museumId: String, completion: @escaping(Error?) -> Void) {
+        guard let currentUser = AuthManager.shared.getCurrentAuthUser() else { return }
+        let userID = currentUser.uid
+        userDB.document(userID).updateData([
+            "lastUpdated": FieldValue.serverTimestamp(),
+            "mid": museumId]) { err in
+                if let err = err {
+                    print(err)
+                }
+        }
+    }
+    
     func addUserRequest(requestID: String, completion: @escaping (Error?) -> Void) {
         guard let currentUser = AuthManager.shared.getCurrentAuthUser() else { return }
         let userID = currentUser.uid

@@ -22,7 +22,7 @@ class ExcursionCreationViewController: UIViewController {
         self.navigationController!.navigationBar
             .largeTitleTextAttributes = [NSAttributedStringKey.font: UIFont.getOswald(.bold, size: 34)]
         checkButtonStatus()
-
+        self.navigationController?.navigationBar.prefersLargeTitles = true
         // Do any additional setup after loading the view.
     }
     @IBAction func nextButtonPressed(_ sender: Any) {
@@ -74,4 +74,15 @@ extension ExcursionCreationViewController: UITextFieldDelegate {
         }
     }
     
+}
+
+// MARK: - Errors handling
+extension ExcursionCreationViewController {
+    func showErrorAlert(message: String) {
+        let alert = UIAlertController(title: "Ошибка",
+                                      message: message,
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Хорошо", style: .default, handler: nil))
+        present(alert, animated: true)
+    }
 }

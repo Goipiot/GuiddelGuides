@@ -20,7 +20,7 @@ final class LocationHelper: NSObject, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
 //        locationManager.allowsBackgroundLocationUpdates = true
-//        locationManager.pausesLocationUpdatesAutomatically = false
+        locationManager.pausesLocationUpdatesAutomatically = true
 //        locationManager.startUpdatingLocation()
 //        locationManager.startMonitoringSignificantLocationChanges()
     }
@@ -29,11 +29,12 @@ final class LocationHelper: NSObject, CLLocationManagerDelegate {
         return locationManager.location
     }
     
-    func getDistance(from location: CLLocation, completion: ((NSError?, Double?) -> Void)) {
+    func getDistance(from coordinates: [Double], completion: ((Error?, Double?) -> Void)) {
+        let location = CLLocation(latitude: coordinates[1], longitude: coordinates[0])
         guard let yourLocation = locationManager.location else {
-            return completion(NSError(), nil)
+            return completion(BaseError.invalidData, nil)
         }
-        let distance = yourLocation.distance(from: location)/1000
+        let distance = yourLocation.distance(from: location) / 1000
         return completion(nil, distance)
     }
     

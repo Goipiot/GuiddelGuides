@@ -17,6 +17,7 @@ struct User: Codable {
     var displayName: String?
     var photoURL: String?
     var notificationToken: String? = ""
+    var museumID: String? = "N/A"
     
     init(authData: Firebase.User) {
         print(authData)

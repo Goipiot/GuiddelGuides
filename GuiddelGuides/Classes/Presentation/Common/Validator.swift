@@ -22,5 +22,21 @@ class Validator {
             return false
         }
     }
+    
+    static func isEmailValid(testStr: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%@+-]{2,25}"
+        
+        let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: testStr)
+    }
+    
+    static func isPassValid(testStr: String) -> Bool {
+        let length = testStr.count
+        if length > 4, length < 25 {
+            return true
+        } else {
+            return false
+        }
+    }
 
 }

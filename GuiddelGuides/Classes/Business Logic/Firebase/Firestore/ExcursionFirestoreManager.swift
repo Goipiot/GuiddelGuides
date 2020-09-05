@@ -52,7 +52,14 @@ struct ExcursionFirestoreManager {
                         completion(error, nil)
                     }
                 }
-                completion(nil, excursionArray)
+//                let formatter = DateFormatter.get(with: .fullWithTime)
+//                excursionArray.sorted {
+//                    let date1 = formatter.date(from: $0.date)
+//                    let date2 = formatter.date(from: $1.date)
+//                    return
+//                }
+                let result = excursionArray.sorted (by: {$0.day.compare($1.day, options: .numeric) == .orderedDescending})
+                completion(nil, result)
             }
         }
     }

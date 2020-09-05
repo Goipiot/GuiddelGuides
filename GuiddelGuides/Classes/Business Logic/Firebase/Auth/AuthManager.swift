@@ -45,12 +45,13 @@ class AuthManager {
                     if let error = error {
                         completion(error)
                     } else {
-                        self.signIn(email: email, password: password) { error in
-                            if let error = error {
+                        Auth.auth().signIn(withEmail: email, password: password) { user, error in
+                            if let _ = user, error == nil {
+                                completion(nil)
+                            } else {
                                 completion(error)
                             }
                         }
-                        completion(nil)
                     }
                 }
             } else {

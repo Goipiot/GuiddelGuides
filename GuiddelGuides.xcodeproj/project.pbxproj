@@ -50,6 +50,7 @@
 		38536E802479B5D5004A43ED /* PartlyRoundCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38536E7F2479B5D5004A43ED /* PartlyRoundCornersView.swift */; };
 		38536E832479BAAB004A43ED /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38536E822479BAAB004A43ED /* RequestsViewController.swift */; };
 		38536E872479BEEF004A43ED /* ExcursionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38536E862479BEEF004A43ED /* ExcursionCollectionViewCell.swift */; };
+		3857A6F124FD5828009FF78C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3857A6F024FD5828009FF78C /* GoogleService-Info.plist */; };
 		387CCC9324E6954D00E4C735 /* ExcursionCreation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387CCC9224E6954D00E4C735 /* ExcursionCreation.storyboard */; };
 		387CCC9624E6A2FC00E4C735 /* ExcursionCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387CCC9524E6A2FC00E4C735 /* ExcursionCreationViewController.swift */; };
 		387CCC9C24E6CEDC00E4C735 /* ExcursionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387CCC9B24E6CEDC00E4C735 /* ExcursionBuilder.swift */; };
@@ -63,7 +64,6 @@
 		38A5A805245C95F600394FE3 /* MuseumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5A804245C95F600394FE3 /* MuseumService.swift */; };
 		38A5A808245C968D00394FE3 /* MuseumEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5A807245C968D00394FE3 /* MuseumEndpoint.swift */; };
 		38A5A80A245C973F00394FE3 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5A809245C973F00394FE3 /* ServiceLayer.swift */; };
-		38A5A80E245C98BD00394FE3 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5A80D245C98BD00394FE3 /* LocationHelper.swift */; };
 		38A5A839245F068200394FE3 /* GuideRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5A838245F068200394FE3 /* GuideRequest.swift */; };
 		38A5A844245F488300394FE3 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5A843245F488300394FE3 /* DateFormatter+Extension.swift */; };
 		38A5A846245F48C000394FE3 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5A845245F48C000394FE3 /* Date+Extension.swift */; };
@@ -79,7 +79,6 @@
 		38A5A88324643EB900394FE3 /* Museum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5A88224643EB900394FE3 /* Museum.swift */; };
 		38A5A8882464462E00394FE3 /* GuideRequestFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5A8872464462E00394FE3 /* GuideRequestFirestoreManager.swift */; };
 		38A5A88A2464469A00394FE3 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5A8892464469900394FE3 /* FirestoreManager.swift */; };
-		38A5A88C246465DB00394FE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38A5A88B246465DB00394FE3 /* GoogleService-Info.plist */; };
 		38A5A8912464727D00394FE3 /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5A8902464727C00394FE3 /* RequestTableViewCell.swift */; };
 		38A5A8932464864C00394FE3 /* ExcursionFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5A8922464864C00394FE3 /* ExcursionFirestoreManager.swift */; };
 		38A5A8952464878200394FE3 /* Excursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5A8942464878200394FE3 /* Excursion.swift */; };
@@ -89,6 +88,19 @@
 		38ADD2D62457929D00E746DE /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ADD2D52457929D00E746DE /* ActivityIndicator.swift */; };
 		38ADD30D245A5B4700E746DE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38ADD30C245A5B4700E746DE /* Launch Screen.storyboard */; };
 		38ADD312245B1A8D00E746DE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ADD311245B1A8D00E746DE /* User.swift */; };
+		38D831F224FE66BB0026E5C1 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D831EF24FE66BB0026E5C1 /* LocationHelper.swift */; };
+		38D831F324FE66BB0026E5C1 /* MuseumSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D831F024FE66BB0026E5C1 /* MuseumSearchViewModel.swift */; };
+		38D831F524FE85E90026E5C1 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D831F424FE85E20026E5C1 /* SearchCell.swift */; };
+		38D831FC24FE8F270026E5C1 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D831FB24FE8F270026E5C1 /* ProfileViewModel.swift */; };
+		38D8320324FE90320026E5C1 /* ProfileViewModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D8320224FE90320026E5C1 /* ProfileViewModelItem.swift */; };
+		38D8320524FE92730026E5C1 /* ProfileViewModelItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D8320424FE92730026E5C1 /* ProfileViewModelItemType.swift */; };
+		38D8320824FE95760026E5C1 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D8320724FE95760026E5C1 /* VerificationViewController.swift */; };
+		38D8321024FED0640026E5C1 /* GuideBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D8320F24FED0640026E5C1 /* GuideBuilder.swift */; };
+		38D8321224FED1B20026E5C1 /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D8321124FED1B20026E5C1 /* Guide.swift */; };
+		38D8321424FED7B30026E5C1 /* TextFieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D8321324FED7B30026E5C1 /* TextFieldsViewController.swift */; };
+		38EDF41524FEDF240037718B /* RegistartionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EDF41424FEDF240037718B /* RegistartionViewController.swift */; };
+		38EDF41725012C3F0037718B /* MuseumFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EDF41625012C3F0037718B /* MuseumFirestoreManager.swift */; };
+		38EDF41925014E990037718B /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EDF41825014E990037718B /* CircleButton.swift */; };
 		645D7898204344160093B00C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645D7897204344160093B00C /* AppDelegate.swift */; };
 		645D789F204344160093B00C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 645D789E204344160093B00C /* Assets.xcassets */; };
 		649F422020438D1B00B21997 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649F421D20438D1A00B21997 /* LoginViewController.swift */; };
@@ -141,6 +153,7 @@
 		38536E7F2479B5D5004A43ED /* PartlyRoundCornersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartlyRoundCornersView.swift; sourceTree = "<group>"; };
 		38536E822479BAAB004A43ED /* RequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
 		38536E862479BEEF004A43ED /* ExcursionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionCollectionViewCell.swift; sourceTree = "<group>"; };
+		3857A6F024FD5828009FF78C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		387CCC9224E6954D00E4C735 /* ExcursionCreation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExcursionCreation.storyboard; sourceTree = "<group>"; };
 		387CCC9524E6A2FC00E4C735 /* ExcursionCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionCreationViewController.swift; sourceTree = "<group>"; };
 		387CCC9B24E6CEDC00E4C735 /* ExcursionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionBuilder.swift; sourceTree = "<group>"; };
@@ -153,7 +166,6 @@
 		38A5A804245C95F600394FE3 /* MuseumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumService.swift; sourceTree = "<group>"; };
 		38A5A807245C968D00394FE3 /* MuseumEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumEndpoint.swift; sourceTree = "<group>"; };
 		38A5A809245C973F00394FE3 /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
-		38A5A80D245C98BD00394FE3 /* LocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
 		38A5A838245F068200394FE3 /* GuideRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideRequest.swift; sourceTree = "<group>"; };
 		38A5A843245F488300394FE3 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		38A5A845245F48C000394FE3 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
@@ -169,7 +181,6 @@
 		38A5A88224643EB900394FE3 /* Museum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Museum.swift; sourceTree = "<group>"; };
 		38A5A8872464462E00394FE3 /* GuideRequestFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideRequestFirestoreManager.swift; sourceTree = "<group>"; };
 		38A5A8892464469900394FE3 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
-		38A5A88B246465DB00394FE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		38A5A8902464727C00394FE3 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
 		38A5A8922464864C00394FE3 /* ExcursionFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcursionFirestoreManager.swift; sourceTree = "<group>"; };
 		38A5A8942464878200394FE3 /* Excursion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Excursion.swift; sourceTree = "<group>"; };
@@ -180,6 +191,19 @@
 		38ADD2FE245A43EA00E746DE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		38ADD30C245A5B4700E746DE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		38ADD311245B1A8D00E746DE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		38D831EF24FE66BB0026E5C1 /* LocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
+		38D831F024FE66BB0026E5C1 /* MuseumSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseumSearchViewModel.swift; sourceTree = "<group>"; };
+		38D831F424FE85E20026E5C1 /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchCell.swift; path = ../SearchCell.swift; sourceTree = "<group>"; };
+		38D831FB24FE8F270026E5C1 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		38D8320224FE90320026E5C1 /* ProfileViewModelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelItem.swift; sourceTree = "<group>"; };
+		38D8320424FE92730026E5C1 /* ProfileViewModelItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelItemType.swift; sourceTree = "<group>"; };
+		38D8320724FE95760026E5C1 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		38D8320F24FED0640026E5C1 /* GuideBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideBuilder.swift; sourceTree = "<group>"; };
+		38D8321124FED1B20026E5C1 /* Guide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide.swift; sourceTree = "<group>"; };
+		38D8321324FED7B30026E5C1 /* TextFieldsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsViewController.swift; sourceTree = "<group>"; };
+		38EDF41424FEDF240037718B /* RegistartionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistartionViewController.swift; sourceTree = "<group>"; };
+		38EDF41625012C3F0037718B /* MuseumFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumFirestoreManager.swift; sourceTree = "<group>"; };
+		38EDF41825014E990037718B /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		38EF569E24719E21008CC7A2 /* GuiddelGuides.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GuiddelGuides.entitlements; sourceTree = "<group>"; };
 		3CBFEE1185FFC2D4D4CB35AF /* Pods-GuiddelGuides.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuiddelGuides.release.xcconfig"; path = "Target Support Files/Pods-GuiddelGuides/Pods-GuiddelGuides.release.xcconfig"; sourceTree = "<group>"; };
 		645D7894204344160093B00C /* GuiddelGuides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuiddelGuides.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,6 +281,7 @@
 		38184F6224561EEE00FDF74B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				38D8321524FED8520026E5C1 /* VCs */,
 				38A5A86A24634BE000394FE3 /* Color */,
 				38A5A87D2463650D00394FE3 /* Fonts */,
 				38A5A7D9245C866600394FE3 /* Notification */,
@@ -479,6 +504,7 @@
 				38A5A88224643EB900394FE3 /* Museum.swift */,
 				38A5A7CA245C84B300394FE3 /* MuseumResponse.swift */,
 				38ADD311245B1A8D00E746DE /* User.swift */,
+				38D8321124FED1B20026E5C1 /* Guide.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -496,7 +522,7 @@
 		38A5A7D1245C85AD00394FE3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				38A5A88B246465DB00394FE3 /* GoogleService-Info.plist */,
+				3857A6F024FD5828009FF78C /* GoogleService-Info.plist */,
 				645D78A3204344160093B00C /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -525,8 +551,11 @@
 		38A5A7E1245C8E8200394FE3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				38D831ED24FE664F0026E5C1 /* ViewModel */,
+				38D831EC24FE664B0026E5C1 /* Helper */,
+				38D831EB24FE66450026E5C1 /* Controller */,
+				38D831EA24FE66400026E5C1 /* View */,
 				38ADD2CD24575C3D00E746DE /* Login.storyboard */,
-				649F421D20438D1A00B21997 /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -602,6 +631,7 @@
 				38A5A8892464469900394FE3 /* FirestoreManager.swift */,
 				38A5A8872464462E00394FE3 /* GuideRequestFirestoreManager.swift */,
 				38184F6D24565ED600FDF74B /* UserFirestoreManager.swift */,
+				38EDF41625012C3F0037718B /* MuseumFirestoreManager.swift */,
 			);
 			path = Firestore;
 			sourceTree = "<group>";
@@ -634,23 +664,15 @@
 			isa = PBXGroup;
 			children = (
 				38A5A89624648BD900394FE3 /* Excursion */,
-				38A5A80C245C98AD00394FE3 /* Location */,
 			);
 			path = Helper;
-			sourceTree = "<group>";
-		};
-		38A5A80C245C98AD00394FE3 /* Location */ = {
-			isa = PBXGroup;
-			children = (
-				38A5A80D245C98BD00394FE3 /* LocationHelper.swift */,
-			);
-			path = Location;
 			sourceTree = "<group>";
 		};
 		38A5A80F245C991A00394FE3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				3805A8B724EEBCF200E1CD49 /* OpenExcursionViewModel.swift */,
+				38D831FA24FE8E170026E5C1 /* Profile */,
+				38D831F924FE8E080026E5C1 /* Excursion List */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -696,6 +718,7 @@
 		38A5A842245F487200394FE3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				38EDF41A25025C7A0037718B /* Error */,
 				38A5A847245F48D800394FE3 /* Date */,
 			);
 			path = Common;
@@ -758,6 +781,7 @@
 		38ADD2D12457877A00E746DE /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				38EDF41825014E990037718B /* CircleButton.swift */,
 				380C535024E967690047BCDE /* ExcursionRoundView.swift */,
 				38536E7F2479B5D5004A43ED /* PartlyRoundCornersView.swift */,
 				38ADD2D2245787A900E746DE /* RoundCornersButton.swift */,
@@ -776,6 +800,138 @@
 				38ADD2D52457929D00E746DE /* ActivityIndicator.swift */,
 			);
 			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		38D831EA24FE66400026E5C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				38D831F624FE895A0026E5C1 /* Museum Search */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		38D831EB24FE66450026E5C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38EDF41324FEDF0B0037718B /* Registartion */,
+				38D8320B24FE95CA0026E5C1 /* Verification */,
+				38D8320A24FE95C00026E5C1 /* Login */,
+				38D8320924FE95B70026E5C1 /* Search */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		38D831EC24FE664B0026E5C1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				38D8320E24FED0540026E5C1 /* Builders */,
+				38D831EF24FE66BB0026E5C1 /* LocationHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		38D831ED24FE664F0026E5C1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				38D831F724FE8DDA0026E5C1 /* Search */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		38D831F624FE895A0026E5C1 /* Museum Search */ = {
+			isa = PBXGroup;
+			children = (
+				38D831F424FE85E20026E5C1 /* SearchCell.swift */,
+			);
+			path = "Museum Search";
+			sourceTree = "<group>";
+		};
+		38D831F724FE8DDA0026E5C1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				38D831F024FE66BB0026E5C1 /* MuseumSearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		38D831F924FE8E080026E5C1 /* Excursion List */ = {
+			isa = PBXGroup;
+			children = (
+				3805A8B724EEBCF200E1CD49 /* OpenExcursionViewModel.swift */,
+			);
+			path = "Excursion List";
+			sourceTree = "<group>";
+		};
+		38D831FA24FE8E170026E5C1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				38D831FD24FE8FD70026E5C1 /* Profile Item */,
+				38D831FB24FE8F270026E5C1 /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		38D831FD24FE8FD70026E5C1 /* Profile Item */ = {
+			isa = PBXGroup;
+			children = (
+				38D8320224FE90320026E5C1 /* ProfileViewModelItem.swift */,
+				38D8320424FE92730026E5C1 /* ProfileViewModelItemType.swift */,
+			);
+			path = "Profile Item";
+			sourceTree = "<group>";
+		};
+		38D8320924FE95B70026E5C1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		38D8320A24FE95C00026E5C1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				649F421D20438D1A00B21997 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		38D8320B24FE95CA0026E5C1 /* Verification */ = {
+			isa = PBXGroup;
+			children = (
+				38D8320724FE95760026E5C1 /* VerificationViewController.swift */,
+			);
+			path = Verification;
+			sourceTree = "<group>";
+		};
+		38D8320E24FED0540026E5C1 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				38D8320F24FED0640026E5C1 /* GuideBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		38D8321524FED8520026E5C1 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				38D8321324FED7B30026E5C1 /* TextFieldsViewController.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		38EDF41324FEDF0B0037718B /* Registartion */ = {
+			isa = PBXGroup;
+			children = (
+				38EDF41424FEDF240037718B /* RegistartionViewController.swift */,
+			);
+			path = Registartion;
+			sourceTree = "<group>";
+		};
+		38EDF41A25025C7A0037718B /* Error */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 		38FBA4D124EFEE6D00CBFD57 /* Excursion Details */ = {
@@ -904,6 +1060,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3857A6F124FD5828009FF78C /* GoogleService-Info.plist in Resources */,
 				649F422820438D5400B21997 /* Main.storyboard in Resources */,
 				38ADD2CE24575C3D00E746DE /* Login.storyboard in Resources */,
 				3818F21A24EA941300F45043 /* ExcursionDateTableViewCell.xib in Resources */,
@@ -920,7 +1077,6 @@
 				3818F23124EBE4A100F45043 /* OpenExcursionTableViewCell.xib in Resources */,
 				38A5A87924635E6200394FE3 /* OswaldSemiBold.ttf in Resources */,
 				645D789F204344160093B00C /* Assets.xcassets in Resources */,
-				38A5A88C246465DB00394FE3 /* GoogleService-Info.plist in Resources */,
 				3818F22124EA94F300F45043 /* ExcursionSizeTableViewCell.xib in Resources */,
 				3818F21E24EA94B500F45043 /* ExcursionNameTableViewCell.xib in Resources */,
 				38A5A87C2463608B00394FE3 /* OswaldBold.ttf in Resources */,
@@ -1032,22 +1188,28 @@
 				380C535F24E96CC80047BCDE /* ExcursionNameTableViewCell.swift in Sources */,
 				38A5A7FD245C953600394FE3 /* Endpoint.swift in Sources */,
 				380C536A24E9C3A50047BCDE /* ExcursionSizeTableViewCell.swift in Sources */,
+				38D8320324FE90320026E5C1 /* ProfileViewModelItem.swift in Sources */,
 				38A5A8932464864C00394FE3 /* ExcursionFirestoreManager.swift in Sources */,
 				38A5A87F2463653600394FE3 /* UIFont+Extension.swift in Sources */,
 				38A5A7DE245C8D1000394FE3 /* MainViewController.swift in Sources */,
 				380C535D24E96CC80047BCDE /* ExcursionViewModel.swift in Sources */,
 				38000DF924F19F1A00E29387 /* ExcursionParticipantsTableViewCell.swift in Sources */,
+				38EDF41524FEDF240037718B /* RegistartionViewController.swift in Sources */,
+				38EDF41725012C3F0037718B /* MuseumFirestoreManager.swift in Sources */,
 				38184F702457196500FDF74B /* Notification.Name.swift in Sources */,
 				38ADD2D3245787A900E746DE /* RoundCornersButton.swift in Sources */,
 				38184F6824562B2D00FDF74B /* StorageManager.swift in Sources */,
 				380C534B24E859C90047BCDE /* ExcursionPriceViewController.swift in Sources */,
 				380C535B24E96CC80047BCDE /* ExcursionMuseumNameTableViewCell.swift in Sources */,
 				38536E7E2479B5AD004A43ED /* UIButton+Extension.swift in Sources */,
+				38D8321424FED7B30026E5C1 /* TextFieldsViewController.swift in Sources */,
 				38A5A86924634AFC00394FE3 /* TransparentTextField.swift in Sources */,
 				38A5A7F5245C945600394FE3 /* ApiClient.swift in Sources */,
 				387CCCA224E6DE4700E4C735 /* ExcursionGroupViewController.swift in Sources */,
+				38D831F524FE85E90026E5C1 /* SearchCell.swift in Sources */,
 				38184F6C2456532E00FDF74B /* AuthManager.swift in Sources */,
 				38184F6124561E7B00FDF74B /* TextfieldView.swift in Sources */,
+				38D831F224FE66BB0026E5C1 /* LocationHelper.swift in Sources */,
 				38536E802479B5D5004A43ED /* PartlyRoundCornersView.swift in Sources */,
 				387CCCA024E6D6BA00E4C735 /* CreationValidator.swift in Sources */,
 				3818F22C24EAB60300F45043 /* ExcursionRequestManager.swift in Sources */,
@@ -1055,21 +1217,27 @@
 				38A5A7CB245C84B400394FE3 /* MuseumResponse.swift in Sources */,
 				380C534924E856470047BCDE /* RoundCornersImage.swift in Sources */,
 				380C535124E967690047BCDE /* ExcursionRoundView.swift in Sources */,
-				38A5A80E245C98BD00394FE3 /* LocationHelper.swift in Sources */,
 				380C535A24E96CC80047BCDE /* ExcursionDateTableViewCell.swift in Sources */,
+				38D831FC24FE8F270026E5C1 /* ProfileViewModel.swift in Sources */,
 				38A5A8952464878200394FE3 /* Excursion.swift in Sources */,
 				38536E832479BAAB004A43ED /* RequestsViewController.swift in Sources */,
 				38A5A89824648BE600394FE3 /* ExcursionManager.swift in Sources */,
 				38A5A805245C95F600394FE3 /* MuseumService.swift in Sources */,
+				38D8321224FED1B20026E5C1 /* Guide.swift in Sources */,
+				38D831F324FE66BB0026E5C1 /* MuseumSearchViewModel.swift in Sources */,
 				38184F6A2456386D00FDF74B /* Validator.swift in Sources */,
 				380C534D24E859DD0047BCDE /* ExcursionDateViewController.swift in Sources */,
 				38184F6E24565ED600FDF74B /* UserFirestoreManager.swift in Sources */,
 				38A5A86C24634BEB00394FE3 /* Color.swift in Sources */,
 				38A5A839245F068200394FE3 /* GuideRequest.swift in Sources */,
+				38D8320524FE92730026E5C1 /* ProfileViewModelItemType.swift in Sources */,
 				38184F5F2456137C00FDF74B /* UserProfileViewController.swift in Sources */,
+				38D8320824FE95760026E5C1 /* VerificationViewController.swift in Sources */,
 				387CCC9624E6A2FC00E4C735 /* ExcursionCreationViewController.swift in Sources */,
 				38184F66245624DE00FDF74B /* AccountManager.swift in Sources */,
+				38D8321024FED0640026E5C1 /* GuideBuilder.swift in Sources */,
 				38536E872479BEEF004A43ED /* ExcursionCollectionViewCell.swift in Sources */,
+				38EDF41925014E990037718B /* CircleButton.swift in Sources */,
 				38A5A88324643EB900394FE3 /* Museum.swift in Sources */,
 				3805A8B824EEBCF200E1CD49 /* OpenExcursionViewModel.swift in Sources */,
 				380C535C24E96CC80047BCDE /* ExcursionPriceTableViewCell.swift in Sources */,
@@ -1215,11 +1383,11 @@
 				CODE_SIGN_ENTITLEMENTS = GuiddelGuides/GuiddelGuides.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = LXJ3YPTS8E;
+				DEVELOPMENT_TEAM = Z2UGP9PC4W;
 				INFOPLIST_FILE = "$(SRCROOT)/GuiddelGuides/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.guiddel.guiddelguides;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guiddel.guiddelguidesapp;
 				PRODUCT_NAME = GuiddelGuides;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1234,11 +1402,11 @@
 				CODE_SIGN_ENTITLEMENTS = GuiddelGuides/GuiddelGuides.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = LXJ3YPTS8E;
+				DEVELOPMENT_TEAM = Z2UGP9PC4W;
 				INFOPLIST_FILE = "$(SRCROOT)/GuiddelGuides/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.guiddel.guiddelguides;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guiddel.guiddelguidesapp;
 				PRODUCT_NAME = GuiddelGuides;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

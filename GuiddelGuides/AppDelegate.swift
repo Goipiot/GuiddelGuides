@@ -42,10 +42,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setup() {
         UIBarButtonItem.appearance().setTitleTextAttributes(
             ([NSAttributedString.Key.font: UIFont.getOswald(.regular, size: 17),
-              NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.2156862745, green: 0.2431372549, blue: 0.9411764706, alpha: 1)]), for: .normal)
+              NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)]), for: .normal)
         UIBarButtonItem.appearance().setTitleTextAttributes(
             ([NSAttributedString.Key.font: UIFont.getOswald(.regular, size: 17),
-              NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.2156862745, green: 0.2431372549, blue: 0.9411764706, alpha: 1)]), for: .highlighted)
+              NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)]), for: .highlighted)
     }
     
     
